@@ -1,0 +1,152 @@
+{
+  "themes": [ {
+    "name": "destroying",
+    "default": false,
+    "options": {
+      "particles": {
+        "move": {
+          "outModes": {
+            "default": "destroy",
+            "bottom": "destroy",
+            "left": "destroy",
+            "right": "destroy",
+            "top": "destroy"
+          },
+          "speed": 0.5
+        },
+        "opacity": {
+          "animation": {
+            "minimumValue": 0,
+            "destroy": "min",
+            "speed": 0.3
+          }
+        },
+        "size": {
+          "value": 8
+        }
+      }
+    }
+  }, {
+    "name": "main",
+    "default": false,
+    "options": {
+      "particles": {
+        "move": {
+          "outModes": {
+            "default": "bounce",
+            "bottom": "bounce",
+            "left": "bounce",
+            "right": "bounce",
+            "top": "bounce"
+          },
+          "speed": 0.2,
+          "opacity": {
+            "animation": {
+              "destroy": "none",
+              "speed": 0.1
+            }
+          }
+        },
+        "size": {
+          "value": 5
+        },
+        "number": {
+          "value": 150
+        }
+      }
+    }
+  }
+
+  ],
+  "background": {
+    "color": {
+      "value": "#fff"
+    },
+    "position": "50% 50%",
+    "repeat": "no-repeat",
+    "size": "cover"
+  },
+  "fullScreen": {
+    "enable": true,
+    "zIndex": 1
+  },
+  "detectRetina": true,
+  "fpsLimit": 30,
+  "particles": {
+    "color": {
+      "value": [
+        "#008000",
+        "#ffff00",
+        "#ff00ff",
+        "#00ffff"
+      ]
+    },
+    "links": {
+      "color": {
+        "value": "#00ffff" 
+      },
+      "distance": 40,
+      "enable": true
+    },
+    "move": {
+      "enable": true,
+      "path": {},
+      "outModes": {
+        "default": "bounce",
+        "bottom": "bounce",
+        "left": "bounce",
+        "right": "bounce",
+        "top": "bounce"
+      },
+      "speed": 0.5,
+      "spin": {},
+      "radius": 300,
+      "type": "inline"
+    },
+    "number": {
+      "density": {
+        "area": 200
+      },
+      "value": 300
+    },
+    "opacity": {
+      "value": {
+        "min": 0,
+        "max": 0.4
+      },
+      "animation": {
+        "enable": true,
+        "minimumValue": 0.2,
+        "speed": 0.1
+      }
+    },
+    "size": {
+      "random": {
+        "enable": true,
+        "minimumValue": 0.1
+      },
+      "value": 5,
+      "animation": {
+        "speed": 40,
+        "minimumValue": 0.1
+      }
+    } 
+  },
+  "polygon": {
+    "enable": true,
+    "inline": {
+      "arrangement": "equidistant"
+    },
+    "move": {
+      "radius": 4,
+      "type": "inline"
+    },
+    "scale": 2,
+    "url": "",
+    "type": "inline",
+    "position": {
+      "x": 68,
+      "y": 92
+    }
+  }
+}
