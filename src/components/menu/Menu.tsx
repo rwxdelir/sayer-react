@@ -26,7 +26,7 @@ export default function Menu(props: IMenuProps) {
         <NavLink 
           to="/home" 
           activeClassName="menu-item-selected"
-          onMouseEnter={(event) => onMouseEnter(event, "#A6E1FA")}
+          onMouseEnter={(event) => onMouseEnter(event, "#E0B1CB")}
           onMouseOut={(event) => onMouseOut(event)}
         >
           Home
@@ -36,7 +36,7 @@ export default function Menu(props: IMenuProps) {
         <NavLink 
           to="/projects" 
           activeClassName="menu-item-selected"
-          onMouseEnter={(event) => onMouseEnter(event, "#A6E1FA")}
+          onMouseEnter={(event) => onMouseEnter(event, "#E0B1CB")}
           onMouseOut={(event) => onMouseOut(event)}
         >
           Projects
@@ -46,7 +46,7 @@ export default function Menu(props: IMenuProps) {
         <NavLink 
           to="/skills" 
           activeClassName="menu-item-selected"
-          onMouseEnter={(event) => onMouseEnter(event, "#A6E1FA")}
+          onMouseEnter={(event) => onMouseEnter(event, "#E0B1CB")}
           onMouseOut={(event) => onMouseOut(event)}
         >
           Skills
@@ -56,7 +56,7 @@ export default function Menu(props: IMenuProps) {
         <NavLink 
           to="/contact" 
           activeClassName="menu-item-selected"
-          onMouseEnter={(event) => onMouseEnter(event, "#A6E1FA")}
+          onMouseEnter={(event) => onMouseEnter(event, "#E0B1CB")}
           onMouseOut={(event) => onMouseOut(event)}
         >
           Contact Me

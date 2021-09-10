@@ -9,8 +9,8 @@ import { ISourceOptions, Container, IOptions } from "tsparticles";
 import "pathseg";
 
 function about(): void {
+  console.log("ABOUT")
 }
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
