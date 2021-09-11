@@ -47,6 +47,9 @@
             }
           }
         },
+        "links": {
+          "distance": 100 
+        },
         "size": {
           "value": 5
         },
@@ -85,7 +88,7 @@
       "color": {
         "value": "#00ffff" 
       },
-      "distance": 40,
+      "distance": 50,
       "enable": true
     },
     "move": {
