@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import Particle from './components/particle/Particle';
-import Menu from './components/menu/Menu';
+import Header from './components/header/Header';
 import { useState } from 'react';
 import { ISourceOptions, Container, IOptions } from "tsparticles";
+import Window from "./components/window/Window";
 import "pathseg";
 
 function about(): void {
@@ -15,12 +16,14 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Particle />
-      <Menu 
+      <Header
         home = {about} 
         projects = {about}
         skills = {about}
         contact = {about}
       />
+      <Window>
+      </Window>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
