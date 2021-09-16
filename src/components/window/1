@@ -1,13 +1,11 @@
 .resize-wrapper {
   position: absolute;
   z-index: 2;
-  background: #eff0f1;
-  border-radius: 6px 6px 0px 0px;
+  background: red;
   height: 30px;
   left: 6px;
   top: 0px;
   width: 699px;
-  cursor: default;
 }
 
 .window {
@@ -15,20 +13,19 @@
   z-index: 1;
   opacity: 0.8;
   cursor: text !important;
-  top: 250px !important;
-  left: 565px !important;
+  top: 250px;
+  left: 565px;
 }
 .window-bar {
-  box-shadow: 0px 0px 20px 1px black;
   padding: 3px;
-  border-top: 28px solid grey;
+  border-top: 30px solid pink;
   position: absolute;
   height: calc(100% - 2.7rem);
   width: calc(100% - 1rem);
   left: 5.5px;
   top: 2px;
   color: white;
-  background: #2c2c2c;
+  background: grey;
   z-index: 1;
   cursor: text !important;
   font-family: monospace;
@@ -41,21 +38,4 @@
 
 .window-bar {
   color: white;
-}
-
-.terminal-icon {
-  position: absolute;
-  top: 5px;
-  left: 9px;
-  z-index: 2;
-  cursor: default;
-}
-
-.close-icon {
-  position: absolute;
-  top: 3px;
-  left: 667px;
-  z-index: 2;
-  cursor: default;
-  color: blue;
 }
