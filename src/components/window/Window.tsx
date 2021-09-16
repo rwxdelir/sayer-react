@@ -1,8 +1,10 @@
 import React, { Component, useState } from "react";
 import { Rnd } from "react-rnd";
 import "./Window.css";
-import konsole_icon from "./../../assets/images/konsole.png"
-import close_icon from "./../../assets/images/close.png"
+import konsole_icon from "./../../assets/images/konsole.png";
+import close_icon from "./../../assets/images/close.png";
+import godown_icon from "./../../assets/images/godown.png";
+import goup_icon from "./../../assets/images/goup.png";
 
 const Window: React.FC = () => { 
   const [width, setWidth] = useState(699);
@@ -21,7 +23,8 @@ const Window: React.FC = () => {
       minHeight = {436}
       position = {{x: x, y: y}}
       onDragStop={(e, d) => { setX(d.x);
-                              setY(d.y)}}
+                              setY(d.y)}
+      }
       onResize={(e, direction, ref, delta, position) => {
         setWidth(parseInt(ref.style.width));
         setHeight(parseInt(ref.style.height));
@@ -32,7 +35,10 @@ const Window: React.FC = () => {
     >
       <span className="resize-wrapper" style={{width: width-10}}></span>
       <img src={konsole_icon} class="terminal-icon" width="22" height="22"/>
-      <img src={close_icon} class="close-icon" width="25" height="25"/>
+      <img src={close_icon} class="close-icon" width="26" height="26"/>
+      <img src={godown_icon} class="arrow-icon godown-icon" width="13" height="13"/>
+      <img src={goup_icon} class="arrow-icon goup-icon" width="13" height="13"/>
+
       <div className="window-bar">
       <div><span className="window-cmd">arkul@localhost:~/home/arkul&gt;</span> grep -A10000 RU about.txt</div>
 Get into the creative mind of film director Lars von Trier and learn how reading in his world is connected with writing. Trier calls literature his “basic medium” and reveals his inspiration from writers as Thomas Mann, Leo Tolstoy, and Marcel Proust. He refers to dramaturgy as his “toothache” connected to his reading of Donald Duck, but writing is “the greatest kick you can get,” he says. 
