@@ -3,6 +3,8 @@
   z-index: 2;
   background: #eff0f1;
   border-radius: 6px 6px 0px 0px;
+  padding: 0px;
+  margin: 0px;
   height: 30px;
   left: 6px;
   top: 0px;
@@ -15,10 +17,9 @@
   z-index: 1;
   opacity: 0.8;
   cursor: text !important;
-  top: 250px !important;
-  left: 565px !important;
 }
 .window-bar {
+  user-select:none;
   box-shadow: 0px 0px 20px 1px black;
   padding: 3px;
   border-top: 28px solid grey;
@@ -43,7 +44,7 @@
   color: white;
 }
 
-.terminal-icon {
+.terminal-icon {  
   position: absolute;
   top: 5px;
   left: 9px;
@@ -54,14 +55,16 @@
 .close-icon {
   position: absolute;
   top: 2px;
-  left: 667px;
+  right: 6px;
   z-index: 2;
   cursor: default;
   color: blue;
+  transition: opacity 0.5s;
 }
 
 .close-icon:hover {
   opacity: 0.7;
+  transition: opacity 0.1s;
 }
 
 .arrow-icon {
@@ -77,12 +80,19 @@
 }
 
 .goup-icon {
-  left: 647px;
+  right: 38px;
   top: 7.5px;
 }
 
 .godown-icon {
-  left: 622px;
+  right: 59px;
   top: 9px;
   transform: rotate(180deg);
 }
+
+.diamond-icon {
+  display: none;
+  top: 6px;
+  right: 35px;
+}
+

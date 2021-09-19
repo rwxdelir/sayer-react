@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
+import konsole_icon from "./../../assets/images/konsole.png";
 
 interface IMenuProps {
   home: () => void;
@@ -36,6 +37,11 @@ export default function Menu(props: IMenuProps) {
             onMouseOut={(event) => onMouseOut(event)}
           >
             Home
+            <img src={konsole_icon} 
+              className="menu-konsole-icon konsole-icon" 
+              width="17" height="17" 
+              style={{position: "absolute", 
+                      left: "2px", top: "12px"}}/>
           </NavLink>
         </li>
         <li onClick={props.projects}>
