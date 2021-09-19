@@ -70,7 +70,13 @@ const Window: React.FC = () => {
         }
       } className="resize-wrapper" style={{width: width-9}}></span>
       <img src={konsole_icon} className="terminal-icon" width="22" height="22"/>
-      <img src={close_icon} className="close-icon" width="26" height="26"/>
+      <img src={close_icon} 
+        onClick = {() => {
+          document.querySelector(".window").style.display = "none";
+          document.querySelector(".menu-konsole-icon").style.display="block";
+        }}
+        className="close-icon" 
+        width="26" height="26"/>
       <img src={godown_icon} className="arrow-icon godown-icon" width="13" height="13"/>
       <img 
         src={goup_icon} 

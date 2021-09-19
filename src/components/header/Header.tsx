@@ -35,6 +35,10 @@ export default function Menu(props: IMenuProps) {
             activeClassName="menu-item-selected"
             onMouseEnter={(event) => onMouseEnter(event, "#A6E1FA")}
             onMouseOut={(event) => onMouseOut(event)}
+            onClick={() => {
+              document.querySelector(".window").style.display="block";
+              document.querySelector(".menu-konsole-icon").style.display="none";
+            }}
           >
             Home
             <img src={konsole_icon} 
