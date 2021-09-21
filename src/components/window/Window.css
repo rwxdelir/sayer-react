@@ -96,3 +96,23 @@
   right: 35px;
 }
 
+.konsole-cursor {
+  position: absolute;
+  width: 9px;
+  height: 19px;
+  z-index: 2;
+  background: white;
+  left: 299px;
+  bottom: 1px;
+}
+
+.current-cmd {
+  position: relative;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0
+  }
+}
+

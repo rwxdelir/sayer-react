@@ -14,8 +14,8 @@ const Window: React.FC = () => {
   const [y, setY] = useState(250);
 
   const _switchResolution = () => {
-    const maximizeIcon = document.querySelector(".goup-icon");
-    const minimizeIcon = document.querySelector(".diamond-icon");
+    const maximizeIcon: any = document.querySelector(".goup-icon");
+    const minimizeIcon: any = document.querySelector(".diamond-icon");
     if (width <= 1900 && height <= 930) { 
       setWidth(1900);
       setHeight(950);
@@ -72,8 +72,10 @@ const Window: React.FC = () => {
       <img src={konsole_icon} className="terminal-icon" width="22" height="22"/>
       <img src={close_icon} 
         onClick = {() => {
-          document.querySelector(".window").style.display = "none";
-          document.querySelector(".menu-konsole-icon").style.display="block";
+          const windowClass: any = document.querySelector(".window");
+          const menuKonsoleIcon: any = document.querySelector(".menu-konsole-icon");
+          windowClass.style.display = "none";
+          menuKonsoleIcon.style.display="block";
         }}
         className="close-icon" 
         width="26" height="26"/>
@@ -86,16 +88,22 @@ const Window: React.FC = () => {
       <img 
         src={diamond_icon} 
         onClick = {() => {_switchResolution();}} 
-        class="diamond-icon goup-icon arrow-icon" 
+        className="diamond-icon goup-icon arrow-icon" 
         width="17px" height="17px" />
 
       <div className="window-bar">
+
+
       <div><span className="window-cmd">arkul@localhost:~/home/arkul&gt;</span> grep -A10000 RU about.txt</div>
 Get into the creative mind of film director Lars von Trier and learn how reading in his world is connected with writing. Trier calls literature his “basic medium” and reveals his inspiration from writers as Thomas Mann, Leo Tolstoy, and Marcel Proust. He refers to dramaturgy as his “toothache” connected to his reading of Donald Duck, but writing is “the greatest kick you can get,” he says. 
 
 Even though dramaturgy has been difficult for Lars von Trier, he experiences joy when writing the manuscripts for his films: “The greatest thing is when you let it go, like when you levitate in meditation. You do that sometimes when you’re writing. Then you write fabulously and you experience a high,” he says. “I hope I’ll manage to make a movie intuitively. But I’m stuck in the mire. The mire of dramaturgy.”
+
+      <div className="window-cmd current-cmd">
+        arkul@localhost:~/home/arkul&gt;
+        <div className="konsole-cursor"></div>
+        </div>
       </div>
-      
     </Rnd>
   )
 }
