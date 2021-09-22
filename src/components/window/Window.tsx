@@ -34,6 +34,13 @@ const Window: React.FC = () => {
     } 
   }
 
+  const _closeWindow = () => {
+    const windowClass: any = document.querySelector(".window");
+    const menuKonsoleIcon: any = document.querySelector(".menu-konsole-icon");
+    windowClass.style.display = "none";
+    menuKonsoleIcon.style.display="block";
+  }
+
   return (
     <Rnd
       className="window"
@@ -71,20 +78,21 @@ const Window: React.FC = () => {
       } className="resize-wrapper" style={{width: width-9}}></span>
       <img src={konsole_icon} className="terminal-icon" width="22" height="22"/>
       <img src={close_icon} 
-        onClick = {() => {
-          const windowClass: any = document.querySelector(".window");
-          const menuKonsoleIcon: any = document.querySelector(".menu-konsole-icon");
-          windowClass.style.display = "none";
-          menuKonsoleIcon.style.display="block";
-        }}
+        onClick = {() => { _closeWindow();}}
         className="close-icon" 
-        width="26" height="26"/>
-      <img src={godown_icon} className="arrow-icon godown-icon" width="13" height="13"/>
+        width="26" height="26"
+      />
+      <img src={godown_icon} 
+          onClick = {() => {_closeWindow();}}
+          className="arrow-icon godown-icon" 
+          width="13" height="13"
+      />
       <img 
         src={goup_icon} 
         onClick = {() => {_switchResolution();}} 
         className="arrow-icon goup-icon" 
-        width="13" height="13"/>
+        width="13" height="13"
+      />
       <img 
         src={diamond_icon} 
         onClick = {() => {_switchResolution();}} 

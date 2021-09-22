@@ -3,13 +3,6 @@ import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
 import konsole_icon from "./../../assets/images/konsole.png";
 
-interface IMenuProps {
-  home: () => void;
-  projects: () => void;
-  skills: () => void;
-  contact: () => void;  
-}
-
 const onMouseEnter = (event, color) => {
   const element = event.target;
   element.style.backgroundColor = color;
@@ -20,7 +13,7 @@ const onMouseOut = (event) => {
   element.style.backgroundColor = "transparent";
 }
 
-export default function Menu(props: IMenuProps) {
+export default function Menu() {
   return (
     <div className="header">
       <NavLink to={"/splash"} className="logo">
@@ -29,17 +22,20 @@ export default function Menu(props: IMenuProps) {
         <span>  /&gt;</span>
       </NavLink>
       <ul className="menu" style ={{position: "absolute"}}>
-        <li onClick={props.home}>
+        <li>
           <NavLink 
-            to="/home" 
+            to="/" 
+            exact={true}
             activeClassName="menu-item-selected"
             onMouseEnter={(event) => onMouseEnter(event, "#A6E1FA")}
             onMouseOut={(event) => onMouseOut(event)}
             onClick={() => {
               const windowClass: any = document.querySelector(".window");
               const menuKonsoleIcon: any = document.querySelector(".menu-konsole-icon");
-              windowClass.style.display="block";
               menuKonsoleIcon.style.display="none";
+              if (windowClass) {
+                windowClass.style.display="block";
+              }
             }}
           >
             Home
@@ -50,7 +46,7 @@ export default function Menu(props: IMenuProps) {
                       left: "2px", top: "12px"}}/>
           </NavLink>
         </li>
-        <li onClick={props.projects}>
+        <li>
           <NavLink 
             to="/projects" 
             activeClassName="menu-item-selected"
@@ -60,7 +56,7 @@ export default function Menu(props: IMenuProps) {
             Projects
           </NavLink>
         </li>
-        <li onClick={props.skills}>
+        <li>
           <NavLink 
             to="/skills" 
             activeClassName="menu-item-selected"
@@ -70,7 +66,7 @@ export default function Menu(props: IMenuProps) {
             Skills
           </NavLink>
         </li>
-        <li onClick={props.contact}>
+        <li>
           <NavLink 
             to="/contact" 
             activeClassName="menu-item-selected"
