@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import './index.css';
 import Particle from './components/particle/Particle';
 import Header from './components/header/Header';
 import { useState } from 'react';
 import { ISourceOptions, Container, IOptions } from "tsparticles";
 import Window from "./components/window/Window";
+import ProjectCard from "./components/cards/cards";
+import Projects from "./pages/projects/projects";
+
 import "pathseg";
 
 function about(): void {
@@ -15,18 +18,32 @@ function about(): void {
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Particle />
-      <Header
-        home = {about} 
-        projects = {about}
-        skills = {about}
-        contact = {about}
-      />
-      <Window>
-      </Window>
+      <Switch>
+        <Route
+          path="/"
+          exact 
+          render={(props) => (
+            <div>
+              <Particle />
+              <Header />
+              <Window>
+              </Window>
+            </div>
+          )}
+        />
+        <Route
+          path="/projects"
+          exact
+          render={(props) => (
+            <div>
+              <Particle />
+              <Header />
+              <Projects />
+            </div>
+          )}
+        />
+      </Switch>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
