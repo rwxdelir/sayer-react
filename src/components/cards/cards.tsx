@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { BiLinkExternal } from "react-icons/bi";
 
 interface ICardProps {
   title: string,
@@ -15,7 +16,7 @@ const ProjectCard = (props: ICardProps) => {
         variant="top" 
         alt="card-img" 
         src={props.img} 
-        width={330}
+        width={310}
         height={165}
       />
       <Card.Body>
@@ -24,6 +25,8 @@ const ProjectCard = (props: ICardProps) => {
           {props.description}
         </Card.Text>
         <Button variant="primary" target="_blank">
+          <BiLinkExternal style={{justifyContent: "center"}} /> &nbsp;
+          View Project
         </Button>
       </Card.Body>
     </Card>
