@@ -1,7 +1,11 @@
 .card-img-top {
   padding: 10px!important;
-  opacity: .8!important;
+  opacity: 1 !important;
   border-radius: 10px!important;
+}
+
+.card-img {
+  opacity: 1 !important;
 }
 
 .project-container {
@@ -9,7 +13,7 @@
   width: 100%;
   padding-bottom: 20px !important;
   margin-top: 160px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .row {
@@ -22,11 +26,11 @@
 }
 
 .project-card-view {
+  background-color: rgba(143, 0, 255, 0.5);
   position: relative;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: lavender;
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
@@ -34,7 +38,6 @@
   height: 539px;
   box-shadow: 0 4px 5px 3px rgba(119,53,136,.459)!important;
   color: #fff!important;
-  opacity: .8!important;
   transition: all .4s ease 0s!important;
 }
 
@@ -43,10 +46,23 @@
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
-  font-family: "Raleway",serif!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
+  padding-top: 0px;
+}
+
+.card-title {
+  top: 185px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 20px;
+  font-family: 'VT323', monospace;
+  text-align: center !important;
 }
 
 .project-card-view:hover {
@@ -56,6 +72,7 @@
 }
 
 .btn-primary {
+  opacity: 1;
   color: #fff !important;
   background-color: #623686 !important;
   border-color: #623686 !important;
@@ -67,21 +84,36 @@
   border-color: #6d20c5d7 !important;
 }
 
+.btn-icon {
+  position: absolute;
+  left: 10px;
+  bottom: 13px;
+  font-size: 1.4rem;
+}
+
+.btn-title {
+  font-size: 20px;
+}
+
 .btn {
+  position: absolute;
+  bottom: 30px;
   display: inline-block;
-  font-weight: 400;
+  font-family: 'Orbitron', sans-serif;
   color: #212529;
   cursor: pointer;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: transparent;
   border: 1px solid transparent;
   padding: .375rem .75rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  width: 160px;
+  text-align: right;
   line-height: 1.5;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  right: 75px !important;
 }
 
 .btn:focus {

@@ -9,12 +9,8 @@ import { ISourceOptions, Container, IOptions } from "tsparticles";
 import Window from "./components/window/Window";
 import ProjectCard from "./components/cards/cards";
 import Projects from "./pages/projects/projects";
-
 import "pathseg";
 
-function about(): void {
-  console.log("ABOUT")
-}
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

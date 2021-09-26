@@ -25,8 +25,11 @@ const ProjectCard = (props: ICardProps) => {
           {props.description}
         </Card.Text>
         <Button variant="primary" target="_blank">
-          <BiLinkExternal style={{justifyContent: "center"}} /> &nbsp;
-          View Project
+          <BiLinkExternal className="btn-icon" /> 
+          <span className="btn-title">
+            &nbsp;
+            View Project
+          </span>
         </Button>
       </Card.Body>
     </Card>
