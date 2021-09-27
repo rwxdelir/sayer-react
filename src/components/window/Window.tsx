@@ -98,10 +98,7 @@ const Window: React.FC = () => {
         onClick = {() => {_switchResolution();}} 
         className="diamond-icon goup-icon arrow-icon" 
         width="17px" height="17px" />
-
       <div className="window-bar">
-
-
       <div><span className="window-cmd">arkul@localhost:~/home/arkul&gt;</span> grep -A10000 RU about.txt</div>
 Get into the creative mind of film director Lars von Trier and learn how reading in his world is connected with writing. Trier calls literature his “basic medium” and reveals his inspiration from writers as Thomas Mann, Leo Tolstoy, and Marcel Proust. He refers to dramaturgy as his “toothache” connected to his reading of Donald Duck, but writing is “the greatest kick you can get,” he says. 
 

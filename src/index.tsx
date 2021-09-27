@@ -9,6 +9,7 @@ import { ISourceOptions, Container, IOptions } from "tsparticles";
 import Window from "./components/window/Window";
 import ProjectCard from "./components/cards/cards";
 import Projects from "./pages/projects/projects";
+import Skills from "./pages/skills/skills";
 import "pathseg";
 
 ReactDOM.render(
@@ -35,6 +36,17 @@ ReactDOM.render(
               <Particle />
               <Header />
               <Projects />
+            </div>
+          )}
+        />
+        <Route
+          path="/skills"
+          exact
+          render={(props) => (
+            <div>
+              <Particle />
+              <Header />
+              <Skills />
             </div>
           )}
         />

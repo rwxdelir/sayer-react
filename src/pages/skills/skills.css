@@ -1,0 +1,9 @@
+.skills {
+  position: absolute !important;
+  padding-top: 350px !important;
+  padding-bottom: 30px !important;
+  justify-content: center;
+  z-index: 2;
+}
+
+
