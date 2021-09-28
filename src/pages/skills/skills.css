@@ -1,9 +1,49 @@
-.skills {
-  position: absolute !important;
-  padding-top: 350px !important;
-  padding-bottom: 30px !important;
+.skills-container {
+  top: 250px !important;
+  padding-bottom: 30px; 
   justify-content: center;
+  width: 100%;
   z-index: 2;
+}
+
+
+.tech-icons {
+ margin: 10px;
+ padding: 10px; 
+}
+
+.tech-icons:hover {
+  color: green; 
+}
+.proffesional-skills {
+  margin-top: 10px; 
+  margin-bottom: 50px;
+}
+
+.proffesional-skills-title, .tools-title {
+ justify-content: center; 
+ text-align: center;
+ font-family: 'Orbitron', 'sans-serif';
+ font-size: 40px;
+}
+
+.icon-title {
+  position: absolute; 
+  margin: 0px;          
+  padding: 0px; 
+  display: none;
+  text-align: center;
+  background: black;
+  width: auto; 
+  padding: 5px;
+  padding-bottom: 0px;
+  color: white; 
+  font-family: 'Orbitron', 'sans-serif';
+  height: 25px;
+}
+
+.tech-icons:hover  .icon-title{ 
+  display: block;
 }
 
 
