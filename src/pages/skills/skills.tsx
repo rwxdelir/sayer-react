@@ -4,7 +4,8 @@ import {
   SiTypescript, SiReact, SiC, SiCsharp, 
   SiCsswizardry, SiSass, SiMysql,
   SiRedux, SiOpensuse, SiArchlinux,
-  SiVim, SiGit, SiLinux, SiVisualstudio
+  SiVim, SiGit, SiLinux, SiVisualstudio, 
+  SiGnubash
 } from "react-icons/si";
 import { Col, Row, Container } from "react-bootstrap";
 
@@ -30,7 +31,7 @@ const Skills = () => {
           <SiC 
             style={{width: "125px", height: "125px"}}
           />
-          <div class="icon-title">
+          <div className="icon-title">
             C
           </div>
         </Col>
@@ -40,6 +41,14 @@ const Skills = () => {
           />
           <div className="icon-title">
             MySql
+          </div>          
+        </Col>
+        <Col className="tech-icons">
+          <SiGnubash 
+            style={{width: "125px", height: "125px"}}
+          />
+          <div className="icon-title">
+            Bash
           </div>          
         </Col>
         <Col className="tech-icons">

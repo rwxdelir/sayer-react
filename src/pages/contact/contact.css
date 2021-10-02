@@ -1,0 +1,26 @@
+.social-icon {
+  margin-right: 20px;
+}
+
+.contact-title {
+  position: absolute;
+  bottom: 300px;
+  font-size: 56px;
+  font-weight: 400;
+  font-family: Google Sans Medium;
+  line-height: 1.1;
+  text-align: center;
+  left: 55px;
+}
+
+.contact-description {
+    position: absolute;
+    bottom: 130px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

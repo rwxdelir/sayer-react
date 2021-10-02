@@ -10,6 +10,7 @@ import Window from "./components/window/Window";
 import ProjectCard from "./components/cards/cards";
 import Projects from "./pages/projects/projects";
 import Skills from "./pages/skills/skills";
+import Contact from "./pages/contact/contact";
 import "pathseg";
 
 ReactDOM.render(
@@ -47,6 +48,17 @@ ReactDOM.render(
               <Particle />
               <Header />
               <Skills />
+            </div>
+          )}
+        />
+        <Route
+          path="/contact"
+          exact
+          render={(props) => (
+            <div>
+              <Particle />
+              <Header />
+              <Contact />
             </div>
           )}
         />
