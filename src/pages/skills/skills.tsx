@@ -109,7 +109,7 @@ const Skills = () => {
         </Col>  
       </Row>
       <div className="tools-title"><span style={{color: "blue"}}>Tools</span> i use</div>
-      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Row className="proffesional-tools" style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <Col className="tech-icons">
           <SiVisualstudio
             style={{width: "125px", height: "125px"}}

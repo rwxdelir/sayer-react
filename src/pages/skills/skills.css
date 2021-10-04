@@ -20,6 +20,11 @@
   margin-bottom: 50px;
 }
 
+.proffesional-skills, .proffesional-tools {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
 .proffesional-skills-title, .tools-title {
  justify-content: center; 
  text-align: center;
