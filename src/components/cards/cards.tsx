@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { BiLinkExternal } from "react-icons/bi";
+import Btn from "./../button/button";
 
 interface ICardProps {
   title: string,
   description: string,
+  href: string,
   img?: string
 }
 
@@ -24,13 +24,7 @@ const ProjectCard = (props: ICardProps) => {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" target="_blank">
-          <BiLinkExternal className="btn-icon" /> 
-          <span className="btn-title">
-            &nbsp;
-            View Project
-          </span>
-        </Button>
+        <Btn title={"View Project"} width={"160px"} href={props.href} />
       </Card.Body>
     </Card>
   ) 

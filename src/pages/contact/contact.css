@@ -1,26 +1,25 @@
-.social-icon {
-  margin-right: 20px;
-}
-
 .contact-title {
-  position: absolute;
-  bottom: 300px;
-  font-size: 56px;
+  font-size: 70px;
   font-weight: 400;
-  font-family: Google Sans Medium;
+  font-family: sans-serif;
   line-height: 1.1;
   text-align: center;
-  left: 55px;
+  white-space: nowrap;
+  align-items: start;
 }
 
 .contact-description {
-    position: absolute;
-    bottom: 130px;
-    font-size: 22px;
-    line-height: 30px;
-    text-align: center;
-    margin-top: 0;
-    margin-left: 20px;
-    margin-right: 20px;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
+.contact-btn .btn {
+  bottom: 0px;
+  margin: 0px;
+  align-content: center;
+  right: 94px !important;
+}

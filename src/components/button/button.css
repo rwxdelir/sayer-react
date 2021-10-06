@@ -1,0 +1,43 @@
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #6d20c5d7 !important;
+  border-color: #6d20c5d7 !important;
+}
+
+.btn-icon {
+  position: absolute;
+  left: 10px;
+  bottom: 13px;
+  font-size: 1.4rem;
+}
+
+.btn-title {
+  font-size: 20px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 30px;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  color: #212529;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1.6rem;
+  width: 160px;
+  text-align: right;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  right: 75px !important;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+

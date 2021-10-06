@@ -16,10 +16,6 @@
   z-index: 2;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
 .project-card {
   padding: 50px 25px!important;
   height: auto!important;
@@ -119,4 +115,9 @@
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
 }
