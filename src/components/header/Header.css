@@ -1,6 +1,8 @@
 .header {
   position: absolute;
+  width: 100%;
   z-index: 1;
+  text-align: end;
 }
 
 .logo {
@@ -23,15 +25,14 @@
 }
 
 .menu {
-  position: absolute;
   display: inline-flex;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  top: 10px;
-  left: 1350px;
-  white-space: nowrap
+  white-space: nowrap;
+  margin-top: 5px;
+  margin-right: 100px;
 }
 
 .menu li {

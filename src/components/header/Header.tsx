@@ -21,7 +21,7 @@ export default function Menu() {
         <span className="logo-name">{"ArkulNid"}</span>
         <span>  /&gt;</span>
       </NavLink>
-      <ul className="menu" style ={{position: "absolute"}}>
+      <ul className="menu">
         <li>
           <NavLink 
             to="/" 
