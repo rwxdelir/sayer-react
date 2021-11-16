@@ -17,7 +17,6 @@
 }
 
 .project-card {
-  padding: 50px 25px!important;
   height: auto!important;
 }
 
@@ -104,7 +103,7 @@
   border: 1px solid transparent;
   padding: .375rem .75rem;
   font-size: 1.6rem;
-  width: 160px;
+  width: 190px !important;
   text-align: right;
   line-height: 1.5;
   border-radius: .25rem;

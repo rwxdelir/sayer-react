@@ -9,9 +9,9 @@ import portfolioIcon from "./../../assets/images/portfolio.png";
 
 const Projects = () => {
   return (
-    <Container fluid className="project-container">
-      <Row className="projects-row" style={{ justifyContent: "center", paddingBottom: "10px"}}>
-        <Col className="project-card">
+    <Container className="d-flex justify-content-center" style={{position:"relative", zIndex: 3, maxWidth: "100%", top: "150px"}}>
+      <Row>
+        <Col sm={6} md={6} lg={6} xl={4} xxl={3} className="px-5 p-4 p-2 project-card">
           <ProjectCards 
             title= {"capstone"} 
             description={"The goal of this project is to provide a way to perform some of the tasks required to run the university and to enable effective querying of the metadata from around campus."}
@@ -19,7 +19,7 @@ const Projects = () => {
             href={"https://github.com/arkulnid/capstone"}
           />
         </Col>
-        <Col className="project-card">
+        <Col sm={6} md={6} lg={6} xl={4} xxl={3} className="px-5 p-4 p-2 project-card">
           <ProjectCards 
             title= {"mtwain-js"} 
             description={
@@ -28,7 +28,7 @@ const Projects = () => {
             href={"https://github.com/arkulnid/mtwain-js"}
           />
         </Col>
-        <Col className="project-card">
+        <Col sm={6} md={6} lg={6} xl={4} xxl={3} className="px-5 p-4 p-2 project-card">
           <ProjectCards 
             title= {"hotel-site"} 
             description={
@@ -37,7 +37,7 @@ const Projects = () => {
             href={"https://github.com/arkulnid/hotel_site"}
         />
         </Col>
-        <Col className="project-card">
+        <Col sm={6} md={6} lg={6} xl={4} xxl={3} className="px-5 p-4 p-2 project-card">
           <ProjectCards 
             title= {"sayer-react"} 
             description={"Just portfolio site that implemented with using Typescript, React and Redux. It has a unique (not) window system and terminal that can run several UNIX system commands."}
