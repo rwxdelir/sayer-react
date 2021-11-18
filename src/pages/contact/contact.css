@@ -1,3 +1,14 @@
+.contactme-icons {
+  width: 100%;
+}
+
+.aboutme {
+  display: grid;
+  justify-content: right;
+  margin-top: 15%;
+  margin-right: 100px;
+}
+
 .contact-title {
   font-size: 70px;
   font-weight: 400;
@@ -6,6 +17,7 @@
   text-align: center;
   white-space: nowrap;
   align-items: start;
+  width: 400px;
 }
 
 .contact-description {
@@ -15,11 +27,22 @@
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  width: 400px;
 }
 
 .contact-btn .btn {
-  bottom: 0px;
+  bottom: -65px;
   margin: 0px;
   align-content: center;
-  right: 94px !important;
+  right: 240px !important;
 }
+
+@media (max-width: 1360px) {
+  .message-svg-container {
+    top: 30px !important;
+  }
+  .message-svg {
+    width: 650px;
+  }
+}
+

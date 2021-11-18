@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { FcMenu } from 'react-icons/fc';
 import { NavLink, Link } from "react-router-dom";
 import "./Header.css";
 import konsole_icon from "./../../assets/images/konsole.png";
@@ -13,7 +14,10 @@ const onMouseOut = (event) => {
   element.style.backgroundColor = "transparent";
 }
 
+
+
 export default function Menu() {
+  const [active, setActive] = useState(false);
   return (
     <div className="header">
       <NavLink to={"/splash"} className="logo">
@@ -21,6 +25,21 @@ export default function Menu() {
         <span className="logo-name">{"ArkulNid"}</span>
         <span>  /&gt;</span>
       </NavLink>
+      <FcMenu
+        className="outline-menu" 
+        onClick={ () => {
+            const menuActive: any = document.querySelector(".menu");
+            if (!active) {
+              menuActive.style.display = "none";
+            } else {
+              menuActive.style.display = "block";
+            }
+            setActive(!active);
+          }
+        }
+
+        style={{zIndex: 3, position: "absolute", width: "70", height: "70px"}} 
+      />
       <ul className="menu">
         <li>
           <NavLink 

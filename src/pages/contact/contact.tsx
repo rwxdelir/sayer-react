@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <Container fluid className="contactme-icons" style={{position: "absolute", zIndex: 2}}>
       <Row>
-        <Col lg={6} md={10} style={{position: "absolute",left: "1230px", top: "306px", width: "400px", height: "400px"}}>
+        <Col className="aboutme">
           <Col className="contact-title"> 
             Contact Me
           </Col>
@@ -56,8 +56,8 @@ const Contact = () => {
             </div>
           </Row>
         </Col>
-        <Col lg={6} md={2} style={{position: "absolute", top: "150px", marginLeft: "30px"}}>
-          <MessageImg />
+        <Col className="message-svg-container" style={{position: "absolute", top: "150px", marginLeft: "30px"}}>
+          <MessageImg className="message-svg" />
         </Col>
       </Row>
     </Container>

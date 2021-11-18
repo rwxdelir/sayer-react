@@ -1,7 +1,7 @@
 .header {
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   text-align: end;
 }
 
@@ -13,6 +13,7 @@
   top: 20px;
   white-space: nowrap;
   color: black;
+  z-index: -1;
 }
 
 .logo span {
@@ -28,6 +29,7 @@
   display: inline-flex;
   margin: 0;
   padding: 0;
+  z-index: 3;
   list-style: none;
   overflow: hidden;
   white-space: nowrap;
@@ -81,5 +83,34 @@ body::-webkit-scrollbar-thumb {
   }
   to {
     box-shadow: 0 0 10px 0.5px red;
+  }
+}
+
+.outline-menu {
+  display: none;
+  cursor: pointer;
+  top: 5px;
+  right: 40px;
+}
+
+@media (max-width: 868px) {
+  .menu {
+    display: none;
+    background: violet;
+    text-align: -webkit-center;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .menu li {
+    width: 150px
+  }
+  .outline-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 868.1px) {
+  .menu {
+    display: inline-flex !important;
   }
 }
