@@ -16,10 +16,10 @@ const Skills = () => {
       <div className="proffesional-skills-title">Proffesional
       <span style={{color: "blue"}}> Skillset</span>
       </div>
-      <Row className="proffesional-skills"
-        style={{ justifyContent: "center", paddingBottom: "50px" }}
+      <Row className="proffesional-skills justify-content-center"
+        style={{ paddingBottom: "5px" }}
       >
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiTypescript  
             style={{width: "125px", height: "125px"}}
           />
@@ -27,7 +27,7 @@ const Skills = () => {
             Typescript
           </div>          
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiC 
             style={{width: "125px", height: "125px"}}
           />
@@ -35,7 +35,7 @@ const Skills = () => {
             C
           </div>
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiMysql 
             style={{width: "125px", height: "125px"}}
           />
@@ -43,7 +43,7 @@ const Skills = () => {
             MySql
           </div>          
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiGnubash 
             style={{width: "125px", height: "125px"}}
           />
@@ -51,7 +51,7 @@ const Skills = () => {
             Bash
           </div>          
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiLinux
             style={{width: "125px", height: "125px"}}
           />
@@ -59,7 +59,7 @@ const Skills = () => {
             Linux 
           </div>                                    
         </Col>        
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiReact 
             style={{width: "125px", height: "125px"}}
           />
@@ -67,7 +67,7 @@ const Skills = () => {
             React
           </div>                                    
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiCsswizardry 
             style={{width: "125px", height: "125px"}}
           />
@@ -75,7 +75,7 @@ const Skills = () => {
             CSS
           </div>                                    
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiSass
             style={{width: "125px", height: "125px"}}
           />
@@ -83,7 +83,7 @@ const Skills = () => {
             Sass
           </div>                                    
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiCsharp
             style={{width: "125px", height: "125px"}}
           />
@@ -91,7 +91,7 @@ const Skills = () => {
             Csharp
           </div>                                    
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiRedux
             style={{width: "125px", height: "125px"}}
           />
@@ -99,7 +99,7 @@ const Skills = () => {
             Redux
           </div>                                    
         </Col>
-        <Col className="tech-icons">
+        <Col className="tech-icons" md={2} xxl={3} lg={3} xl={3}>
           <SiGit
             style={{width: "125px", height: "125px"}}
           />
@@ -110,7 +110,8 @@ const Skills = () => {
       </Row>
       <div className="tools-title"><span style={{color: "blue"}}>Tools</span> i use</div>
       <Row className="proffesional-tools" style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Col className="tech-icons">
+        <Row className="justify-content-center" style={{maxWidth: "1000px"}}>
+        <Col sm={6} className="tech-icons">
           <SiVisualstudio
             style={{width: "125px", height: "125px"}}
           />
@@ -118,7 +119,7 @@ const Skills = () => {
             VS Code
           </div>                                    
         </Col>     
-        <Col className="tech-icons">
+        <Col sm={6} className="tech-icons">
           <SiArchlinux
             style={{width: "125px", height: "125px"}}
           />
@@ -126,7 +127,7 @@ const Skills = () => {
             Arch
           </div>                                    
         </Col>     
-        <Col className="tech-icons">
+        <Col sm={6} className="tech-icons">
           <SiVim
             style={{width: "125px", height: "125px"}}
           />
@@ -134,7 +135,7 @@ const Skills = () => {
             Vim
           </div>                                    
         </Col>     
-         <Col className="tech-icons">
+         <Col sm={6} className="tech-icons">
           <SiOpensuse
             style={{width: "125px", height: "125px"}}
           />
@@ -142,6 +143,7 @@ const Skills = () => {
             OpenSuse
           </div>                                    
         </Col>
+        </Row>
       </Row>
     </Container>
   )

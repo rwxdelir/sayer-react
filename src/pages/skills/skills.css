@@ -1,5 +1,5 @@
 .skills-container {
-  top: 250px !important;
+  top: 158px !important;
   padding-bottom: 30px; 
   justify-content: center;
   width: 100%;
@@ -8,8 +8,10 @@
 
 
 .tech-icons {
- margin: 10px;
- padding: 10px; 
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 155px; 
 }
 
 .tech-icons:hover {
@@ -50,5 +52,4 @@
 .tech-icons:hover  .icon-title{ 
   display: block;
 }
-
 
