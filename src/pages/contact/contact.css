@@ -3,10 +3,7 @@
 }
 
 .aboutme {
-  display: grid;
-  justify-content: right;
-  margin-top: 15%;
-  margin-right: 100px;
+  text-align: -webkit-center;
 }
 
 .contact-title {
@@ -31,18 +28,40 @@
 }
 
 .contact-btn .btn {
-  bottom: -65px;
   margin: 0px;
+  margin-top: 20px;
   align-content: center;
-  right: 240px !important;
+  position: relative !important;
+  right: 0px !important; 
+  bottom: 0px !important;
 }
 
-@media (max-width: 1360px) {
-  .message-svg-container {
-    top: 30px !important;
-  }
+.message-svg {
+  width: 450px;
+}
+
+@media (max-width: 900px) {
   .message-svg {
-    width: 650px;
+    width: 480px;
+  }
+  .message-svg-container {
+    width: 100%;
+  }
+  .aboutme {
+    width: 100%;
   }
 }
 
+@media (min-width: 1200px) {
+  .message-svg {
+    width: 700px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .message-svg {
+    width: 800px;
+    margin-bottom: 100px;
+  }
+}
