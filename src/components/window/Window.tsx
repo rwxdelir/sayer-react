@@ -44,6 +44,7 @@ const Window: React.FC = () => {
   return (
     <Rnd
       className="window"
+      bounds="window"
       size={{
         width: width,
         height: height
@@ -67,7 +68,6 @@ const Window: React.FC = () => {
         setY(position.y);
       }}
 
-      bounds="body"
       cancel=".cancel-dragging"
       dragHandleClassName="resize-wrapper"
       enableResizing={true}

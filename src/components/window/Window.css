@@ -10,11 +10,12 @@
   top: 0px;
   width: 699px;
   cursor: default;
+  z-index: 3;
 }
 
 .window {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   opacity: 0.8;
   cursor: text !important;
 }
@@ -34,6 +35,7 @@
   cursor: text !important;
   font-family: monospace;
   font-size: 17px;
+  box-sizing: unset;
 }
 
 .window-cmd {
@@ -48,7 +50,7 @@
   position: absolute;
   top: 5px;
   left: 9px;
-  z-index: 2;
+  z-index: 3;
   cursor: default;
 }
 
@@ -56,7 +58,7 @@
   position: absolute;
   top: 2px;
   right: 6px;
-  z-index: 2;
+  z-index: 3;
   cursor: default;
   color: blue;
   transition: opacity 0.5s;
@@ -69,7 +71,7 @@
 
 .arrow-icon {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   cursor: default;
 }
 
@@ -100,7 +102,7 @@
   position: absolute;
   width: 9px;
   height: 19px;
-  z-index: 2;
+  z-index: 3;
   background: white;
   left: 299px;
   bottom: 1px;

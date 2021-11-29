@@ -4,6 +4,7 @@
 
 .aboutme {
   text-align: -webkit-center;
+  padding-bottom: 10px;
 }
 
 .contact-title {
@@ -42,7 +43,7 @@
 
 @media (max-width: 900px) {
   .message-svg {
-    width: 480px;
+    width: 464;
   }
   .message-svg-container {
     width: 100%;
