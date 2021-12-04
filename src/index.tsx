@@ -12,9 +12,21 @@ import Projects from "./pages/projects/projects";
 import Skills from "./pages/skills/skills";
 import Contact from "./pages/contact/contact";
 import "pathseg";
+ 
 
-ReactDOM.render(
-  <React.StrictMode>
+const App = () => {
+  React.useEffect(() => {
+    const windowContainer: any = document.querySelector(".window-container");
+    const header: any = document.querySelector(".header");
+    windowContainer.style.display = "none";
+    header.style.display = "none";
+
+    setTimeout(() => {
+      windowContainer.style.display = "block";
+      header.style.display = "block";
+    }, 5000) 
+  })
+  return (
     <BrowserRouter>
       <Switch>
         <Route
@@ -31,39 +43,44 @@ ReactDOM.render(
         />
         <Route
           path="/projects"
-          exact
-          render={(props) => (
-            <div>
-              <Particle />
-              <Header />
-              <Projects />
-            </div>
-          )}
-        />
-        <Route
-          path="/skills"
-          exact
-          render={(props) => (
-            <div>
-              <Particle />
-              <Header />
-              <Skills />
-            </div>
-          )}
-        />
-        <Route
-          path="/contact"
-          exact
-          render={(props) => (
-            <div>
-              <Particle />
-              <Header />
-              <Contact />
-            </div>
-          )}
-        />
-      </Switch>
-    </BrowserRouter>
+         exact
+         render={(props) => (
+           <div>
+             <Particle />
+             <Header />
+             <Projects />
+           </div>
+         )}
+       />
+       <Route
+         path="/skills"
+         exact
+         render={(props) => (
+           <div>
+             <Particle />
+             <Header />
+             <Skills />
+           </div>
+         )}
+       />
+       <Route
+         path="/contact"
+         exact
+         render={(props) => (
+           <div>
+             <Particle />
+             <Header />
+             <Contact />
+           </div>
+         )}
+       />
+     </Switch>
+   </BrowserRouter>
+  )
+}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

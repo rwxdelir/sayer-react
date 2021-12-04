@@ -14,17 +14,11 @@ const Particle: React.FC = () => {
   React.useEffect(() => {
     setTimeout(() => {
       const polygonOpt: any = containerRef.current!.options.polygon;
-      containerRef.current!.loadTheme("destroying");
-
-      containerRef.current!.refresh();
-    }, 5000)
-    setTimeout(() => {
-      const polygonOpt: any = containerRef.current!.options.polygon;
       polygonOpt.enable = false; 
       containerRef.current!.loadTheme("main");     
      
       containerRef.current!.refresh();
-    }, 15000)
+    }, 5000)
   }, [baseConfig])
 
   return (
