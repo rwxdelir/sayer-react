@@ -11,14 +11,16 @@ const Particle: React.FC = () => {
   const config = React.useRef(baseConfig);
   config.current.polygon!.url = polygonMask
 
+// TODO: responsive loading theme
+// Solution: containerRef.current!.options.setResponsive 
+
   React.useEffect(() => {
     setTimeout(() => {
       const polygonOpt: any = containerRef.current!.options.polygon;
       polygonOpt.enable = false; 
-      containerRef.current!.loadTheme("main");     
-     
+      containerRef.current!.options.setTheme("main");    
       containerRef.current!.refresh();
-    }, 5000)
+    }, 3000)
   }, [baseConfig])
 
   return (

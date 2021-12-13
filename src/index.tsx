@@ -11,21 +11,17 @@ import ProjectCard from "./components/cards/cards";
 import Projects from "./pages/projects/projects";
 import Skills from "./pages/skills/skills";
 import Contact from "./pages/contact/contact";
+import Splash from "./pages/splash/splash";
 import "pathseg";
  
 
 const App = () => {
-  React.useEffect(() => {
-    const windowContainer: any = document.querySelector(".window-container");
-    const header: any = document.querySelector(".header");
-    windowContainer.style.display = "none";
-    header.style.display = "none";
-
-    setTimeout(() => {
-      windowContainer.style.display = "block";
-      header.style.display = "block";
-    }, 5000) 
-  })
+ // React.useEffect(() => {
+ //   setTimeout(() => {
+ //     // TODO:
+ //     window.location.href = 'skills';
+ //   }, 5000) 
+ // })
   return (
     <BrowserRouter>
       <Switch>
@@ -39,6 +35,13 @@ const App = () => {
               <Window>
               </Window>
             </div>
+          )}
+        />
+        <Route
+          path="/splash"
+          exact 
+          render={(props) => (
+            <Splash />
           )}
         />
         <Route

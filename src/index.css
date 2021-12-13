@@ -16,6 +16,7 @@ code {
     monospace;
 }
 
+
 .example {
   mask-image: -webkit-linear-gradient( top, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 95% );
 }
