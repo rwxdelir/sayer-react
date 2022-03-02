@@ -61,8 +61,7 @@ export default function Menu() {
             <img src={konsole_icon} 
               className="menu-konsole-icon konsole-icon" 
               width="17" height="17" 
-              style={{position: "absolute", 
-                      left: "2px", top: "12px"}}/>
+              style={{position: "absolute", top: "20px", right: "540px"}}/>
           </NavLink>
         </li>
         <li>

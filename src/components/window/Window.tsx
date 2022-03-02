@@ -10,8 +10,8 @@ import diamond_icon from "./../../assets/images/diamond.png";
 const Window: React.FC = () => { 
   const [width, setWidth] = useState(699);
   const [height, setHeight] = useState(436);
-  const [x, setX] = useState(565);
-  const [y, setY] = useState(250);
+  const [x, setX] = useState(Math.floor((window.innerWidth-699)/2));
+  const [y, setY] = useState(Math.floor((window.innerHeight-436)/2));
   const rnd: any = React.useRef();
 
   const _switchResolution = () => {
@@ -41,7 +41,7 @@ const Window: React.FC = () => {
     windowClass.style.display = "none";
     menuKonsoleIcon.style.display="block";
   }
-
+  
   const _alignOnCenter = () => {
     const windowClass: any = document.querySelector(".window");
     let w = parseInt(windowClass.style.width)
