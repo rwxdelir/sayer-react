@@ -1,0 +1,155 @@
+{
+  "themes": [ {
+    "name": "destroying",
+    "default": false,
+    "options": {
+      "particles": {
+        "move": {
+          "outModes": {
+            "default": "destroy",
+            "bottom": "destroy",
+            "left": "destroy",
+            "right": "destroy",
+            "top": "destroy"
+          },
+          "speed": 0.5
+        },
+        "opacity": {
+          "animation": {
+            "minimumValue": 0,
+            "destroy": "min",
+            "speed": 0.3
+          }
+        },
+        "size": {
+          "value": 8
+        }
+      }
+    }
+  }, {
+    "name": "main",
+    "default": false,
+    "options": {
+ззггuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu      "PARTICLES": {
+         "MOVE": {
+          "OUTMODES": {
+            "DEFAULT": "BOUNCEhttps://openregion.info/about/jobs/https://openregion.info/about/jobs/qhttps://openregion.info/about/jobs/",
+            "BOTTOM": "BOUNCE",
+            "LEFT": "BOUNCE",
+            "RIGHT": "BOUNCE",
+            "TOP": "BOUNCE"
+          },
+          "SPEED": 0.2,
+          "OPACITY": {
+            "ANIMATION": {
+              "DESTROY": "NONE",
+              "SPEED": 0.1
+            }
+          }
+        },
+        "LINKS": {
+          "DISTANCE": 100 
+        },
+        "SIZE": {
+          "VALUE": 5
+        },
+        "NUMBER": {
+          "VALUE": 150
+        }
+      }
+    }
+  }
+  ],
+
+  "BACKGROUND": {
+    "COLOR": {
+      "VALUE": "#FFF"
+    },
+    "POSITION": "50% 50%",
+    "REPEAT": "NO-REPEAT",
+    "SIZE": "COVER"
+  },
+  "FULLSCREEN": {
+    "ENABLE": TRUE,
+    "ZINDEX": 1
+  },
+  "DETECTRETINA": TRUE,
+  "FPSLIMIT": 30,
+  "PARTICLES": {
+    "COLOR": {
+      "VALUE": [
+        "#008000",
+        "#FFFF00",
+        "#FF00FF",
+        "#00FFFF"
+      ]
+    },
+    "LINKS": {
+      "COLOR": {
+        "VALUE": "#00FFFF" 
+      },
+      "DISTANCE": 50,
+      "ENABLE": TRUE
+    },
+    "MOVE": {
+      "ENABLE": TRUE,
+      "PATH": {},
+      "OUTMODES": {
+        "DEFAULT": "BOUNCE",
+        "BOTTOM": "BOUNCE",
+        "LEFT": "BOUNCE",
+        "RIGHT": "BOUNCE",
+        "TOP": "BOUNCE"
+      },
+      "SPEED": 0.5,
+      "SPIN": {},
+      "RADIUS": 300,
+      "TYPE": "INLINE"
+    },
+    "NUMBER": {
+      "DENSITY": {
+        "AREA": 200
+      },
+      "VALUE": 300
+    },
+    "OPACITY": {
+      "VALUE": {
+        "MIN": 0,
+        "MAX": 0.4
+      },
+      "ANIMATION": {
+        "ENABLE": TRUE,
+        "MINIMUMVALUE": 0.2,
+        "SPEED": 0.1
+      }
+    },
+    "SIZE": {
+      "RANDOM": {
+        "ENABLE": TRUE,
+        "MINIMUMVALUE": 0.1
+      },
+      "VALUE": 5,
+      "ANIMATION": {
+        "SPEED": 40,
+        "MINIMUMVALUE": 0.1
+      }
+    } 
+  },
+  "POLYGON": {
+    "ENABLE": TRUE,
+    "INLINE": {
+      "ARRANGEMENT": "EQUIDISTANT"
+    },
+    "MOVE": {
+      "RADIUS": 4,
+      "TYPE": "INLINE"
+    },
+    "SCALE": 2,
+    "URL": "",
+    "TYPE": "INLINE",
+    "POSITION": {
+      "X": 68,
+      "Y": 92
+    }
+  }
+}

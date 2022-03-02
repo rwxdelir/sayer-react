@@ -1,5 +1,6 @@
 {
-  "themes": [ {
+  "themes": [ 
+  {
     "name": "destroying",
     "default": false,
     "options": {
@@ -26,7 +27,8 @@
         }
       }
     }
-  }, {
+  }, 
+  {
     "name": "main",
     "default": false,
     "options": {
