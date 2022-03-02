@@ -7,6 +7,10 @@ import godown_icon from "./../../assets/images/godown.png";
 import goup_icon from "./../../assets/images/goup.png";
 import diamond_icon from "./../../assets/images/diamond.png";
 
+let fullScreen: boolean = false;
+let disableDragging = false;
+let enableResizing = true;
+
 const Window: React.FC = () => { 
   const [width, setWidth] = useState(699);
   const [height, setHeight] = useState(436);
@@ -14,18 +18,25 @@ const Window: React.FC = () => {
   const [y, setY] = useState(Math.floor((window.innerHeight-436)/2));
   const rnd: any = React.useRef();
 
+  
   const _switchResolution = () => {
     const maximizeIcon: any = document.querySelector(".goup-icon");
     const minimizeIcon: any = document.querySelector(".diamond-icon");
-    if (width <= 1900 && height <= 930) { 
-      setWidth(1900);
-      setHeight(950);
-      setX(8.5);
+    if (!fullScreen) { 
+      fullScreen = true;
+      disableDragging = true;
+      enableResizing = false;
+      setWidth(window.innerWidth-20);
+      setHeight(window.innerHeight-10);
+      setX(8);
       setY(10);
       minimizeIcon.style.display = "block";
       maximizeIcon.style.display = "none";
-    }
-    else { 
+      console.log(rnd)
+    } else { 
+      fullScreen = false;
+      disableDragging = false;
+      enableResizing = true;
       setWidth(699);
       setHeight(436);
       setX(565);
@@ -91,7 +102,8 @@ const Window: React.FC = () => {
 
         cancel=".cancel-dragging"
         dragHandleClassName="resize-wrapper"
-        enableResizing={true}
+        enableResizing={enableResizing}
+        disableDragging = {disableDragging}
       >
         <span onDoubleClick={() => {
           _switchResolution();
