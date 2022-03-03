@@ -20,7 +20,7 @@ export default function Menu() {
   const [active, setActive] = useState(false);
   return (
     <div className="header">
-      <NavLink to={"/splash"} className="logo">
+      <NavLink to={"/"} className="logo">
         <span>&lt;</span>
         <span className="logo-name">{"ArkulNid"}</span>
         <span>  /&gt;</span>

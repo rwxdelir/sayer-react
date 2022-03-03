@@ -15,7 +15,9 @@
   color: black;
   z-index: -1;
 }
-
+.logo:hover {
+  color: rgb(230, 96, 96);
+}
 .logo span {
   font-size: 1.5em;
 }

@@ -8,8 +8,8 @@ import goup_icon from "./../../assets/images/goup.png";
 import diamond_icon from "./../../assets/images/diamond.png";
 
 let fullScreen: boolean = false;
-let disableDragging = false;
-let enableResizing = true;
+let disableDragging: boolean = false;
+let enableResizing: boolean = true;
 
 const Window: React.FC = () => { 
   const [width, setWidth] = useState(699);
@@ -17,7 +17,6 @@ const Window: React.FC = () => {
   const [x, setX] = useState(Math.floor((window.innerWidth-699)/2));
   const [y, setY] = useState(Math.floor((window.innerHeight-436)/2));
   const rnd: any = React.useRef();
-
   
   const _switchResolution = () => {
     const maximizeIcon: any = document.querySelector(".goup-icon");
@@ -32,15 +31,15 @@ const Window: React.FC = () => {
       setY(10);
       minimizeIcon.style.display = "block";
       maximizeIcon.style.display = "none";
-      console.log(rnd)
     } else { 
       fullScreen = false;
       disableDragging = false;
       enableResizing = true;
       setWidth(699);
       setHeight(436);
-      setX(565);
-      setY(250);
+      setX(Math.floor((window.innerWidth-699)/2));
+      setY(Math.floor((window.innerHeight-436)/2));
+      rnd.current.updatePosition({x, y});
       minimizeIcon.style.display = "none";
       maximizeIcon.style.display = "block";
     } 
@@ -54,14 +53,11 @@ const Window: React.FC = () => {
   }
   
   const _alignOnCenter = () => {
-    const windowClass: any = document.querySelector(".window");
-    let w = parseInt(windowClass.style.width)
-    let h = parseInt(windowClass.style.height)
-    const xx = Math.floor((window.innerWidth-w)/2);
-    const yy = Math.floor((window.innerHeight-h)/2);
+    const xx = Math.floor((window.innerWidth-width)/2);
+    const yy = Math.floor((window.innerHeight-height)/2);
     rnd.current.updatePosition({ xx, yy });
-    setX(xx)
-    setY(yy)
+    setX(xx);
+    setY(yy);
   }
 
   React.useLayoutEffect(() => {
